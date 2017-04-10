@@ -1,0 +1,27 @@
+<div class="form-container" id="toolbar">
+    <header [@fallIn]="state">
+      <button (click)="logout()" class="basic-btn">Logout</button>
+    </header>
+    <div id="page" [@moveInLeft]="state">
+      <h2 style="font-family:'Tahoma'">{{ name.auth.displayName }}</h2>
+      <div (click)="doctorvisit()" class="newbutton">
+      	<p class="buttontext">
+Doctor Visit History
+</p>
+<img src="http://icons.iconarchive.com/icons/iconsmind/outline/128/Stethoscope-icon.png" id="stethescope">
+      </div>
+
+      <div (click)="insurance()" class="newbutton">
+      	<p class="buttontext">
+Insurance History
+</p>
+<img src="http://iconshow.me/media/images/ui/iOS7-optimized-icon/png/128/13.clipboard.png" id="stethescope">
+      </div>
+
+   <div (click)="vaccination()" class="newbutton">
+      	<p class="buttontext">
+Vaccination History
+</p>
+<img src="https://cdn3.iconfinder.com/data/icons/medical-5-1/512/syringe_injection_drug_steroid-512.png" id="stethescope">
+    
+
